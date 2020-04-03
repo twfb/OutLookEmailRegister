@@ -13,6 +13,16 @@ from random import randrange, choice
 from selenium.webdriver.common import utils
 
 
+# verification code Identification settings
+code_url = 'http://apigateway.jianjiaoshuju.com/api/v_1/yzmCustomized.html'
+code_headers = {
+    'appCode': 'X',
+    'appKey': 'X',
+    'appSecret': 'X'
+}
+
+
+
 headers = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
     'accept-encoding': 'deflate',
@@ -83,13 +93,6 @@ name_list = [
     'Skylar'
 ]
 
-# verification code Identification settings
-code_url = 'http://apigateway.jianjiaoshuju.com/api/v_1/yzmCustomized.html'
-code_headers = {
-    'appCode': 'X',
-    'appKey': 'X',
-    'appSecret': 'X'
-}
 last_image_data = ''
 last_code = ''
 
